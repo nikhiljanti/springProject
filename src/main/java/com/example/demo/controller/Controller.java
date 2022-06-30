@@ -11,8 +11,7 @@ public class Controller {
 	@GetMapping("/path/{name}")
 	@ResponseBody
 	public String showData(@PathVariable("name") String name){
-		return "Hi "+name;
+		return "Hi "+name + "!Namaste";
 	}
-	
 
 }
