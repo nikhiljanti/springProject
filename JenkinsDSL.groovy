@@ -4,7 +4,7 @@ job('springProjectDSL') {
         git('https://github.com/nikhiljanti/springProject.git', 'master')
     }
     steps {
-        mvn ('install package')
+        maven ('install package')
     }
     publishers {
         archiveArtifacts '**/*.jar'
